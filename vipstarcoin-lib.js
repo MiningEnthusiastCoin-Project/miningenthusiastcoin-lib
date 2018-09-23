@@ -4693,7 +4693,7 @@ addNetwork({
   networkMagic: 0x012ce7b5,
   port: 31915,
   dnsSeeds: [
-    'dnsseed.vipstarcoin.jp'
+    'dnsseed.miningenthusiastcoin.com'
   ]
 });
 
@@ -9494,7 +9494,7 @@ Transaction.DUST_AMOUNT = 546;
 Transaction.FEE_SECURITY_MARGIN = 15;
 
 // max amount of satoshis in circulation
-Transaction.MAX_MONEY = 70000000000 * 1e8; // VIPSTARCOIN has 70 billion coins
+Transaction.MAX_MONEY = 70000000000 * 1e8; // MiningEnthusiastCoin has 70 billion coins
 
 // nlocktime limit to be considered block height rather than a timestamp
 Transaction.NLOCKTIME_BLOCKHEIGHT_LIMIT = 5e8;
@@ -11204,8 +11204,8 @@ URI.isValid = function(arg, knownParams) {
 URI.parse = function(uri) {
   var info = URL.parse(uri, true);
 
-  if (info.protocol !== 'vipstarcoin:') {
-    throw new TypeError('Invalid vipstarcoin URI');
+  if (info.protocol !== 'miningenthusiastcoin:') {
+    throw new TypeError('Invalid miningenthusiastcoin URI');
   }
 
   // workaround to host insensitiveness
@@ -11229,7 +11229,7 @@ URI.prototype._fromObject = function(obj) {
   /* jshint maxcomplexity: 10 */
 
   if (!Address.isValid(obj.address)) {
-    throw new TypeError('Invalid vipstarcoin address');
+    throw new TypeError('Invalid miningenthusiastcoin address');
   }
 
   this.address = new Address(obj.address);
@@ -11299,7 +11299,7 @@ URI.prototype.toString = function() {
   _.extend(query, this.extras);
 
   return URL.format({
-    protocol: 'vipstarcoin:',
+    protocol: 'miningenthusiastcoin:',
     host: this.address,
     query: query
   });
@@ -20385,7 +20385,7 @@ function GHASH (key) {
 }
 
 // from http://bitwiseshiftleft.github.io/sjcl/doc/symbols/src/core_gcm.js.html
-// by Juho Vähä-Herttua
+// by Juho Vaha-Herttua
 GHASH.prototype.ghash = function (block) {
   var i = -1
   while (++i < block.length) {
@@ -25466,7 +25466,7 @@ module.exports={
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
   "_shasum": "cac9af8762c85836187003c8dfe193e5e2eae5df",
   "_spec": "elliptic@^6.0.0",
-  "_where": "/home/koutarou/src/nodejs/vipstarcoin-lib/node_modules/browserify-sign",
+  "_where": "/home/koutarou/src/nodejs/miningenthusiastcoin-lib/node_modules/browserify-sign",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -28054,7 +28054,7 @@ module.exports={
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
   "_shasum": "cac9af8762c85836187003c8dfe193e5e2eae5df",
   "_spec": "elliptic@^6.0.0",
-  "_where": "/home/koutarou/src/nodejs/vipstarcoin-lib/node_modules/create-ecdh",
+  "_where": "/home/koutarou/src/nodejs/miningenthusiastcoin-lib/node_modules/create-ecdh",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -33410,7 +33410,7 @@ module.exports={
   "_resolved": "http://registry.npmjs.org/elliptic/-/elliptic-3.0.3.tgz",
   "_shasum": "865c9b420bfbe55006b9f969f97a0d2c44966595",
   "_spec": "elliptic@3.0.3",
-  "_where": "/home/koutarou/src/nodejs/vipstarcoin-lib",
+  "_where": "/home/koutarou/src/nodejs/miningenthusiastcoin-lib",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -45609,7 +45609,7 @@ module.exports = Array.isArray || function (arr) {
      * @returns {string} Returns the deburred string.
      * @example
      *
-     * _.deburr('déjà vu');
+     * _.deburr('deja vu');
      * // => 'deja vu'
      */
     function deburr(string) {
@@ -55573,10 +55573,10 @@ exports.createContext = Script.createContext = function (context) {
 
 },{"indexof":191}],258:[function(require,module,exports){
 module.exports={
-  "name": "vipstarcoin-lib",
+  "name": "miningenthusiastcoin-lib",
   "version": "0.0.4",
-  "description": "A pure and powerful JavaScript VIPSTARCOIN library.",
-  "author": "Koutarou Tanaka <from.kyushu.island@gmail.com>",
+  "description": "A pure and powerful JavaScript MiningEnthusiastCoin library.",
+  "author": "Miner-X <miner_x@miningenthusiastcoin.com>",
   "main": "index.js",
   "scripts": {
     "lint": "gulp lint",
@@ -55586,7 +55586,7 @@ module.exports={
   },
   "contributors": [],
   "keywords": [
-    "vipstarcoin",
+    "miningenthusiastcoin",
     "qtum",
     "bitcoin",
     "transaction",
@@ -55605,7 +55605,7 @@ module.exports={
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/fkfk/vipstarcoin-lib.git"
+    "url": "https://github.com/MiningEnthusiastCoin-Project/miningenthusiastcoin-lib.git"
   },
   "browser": {
     "request": "browser-request"
@@ -55628,7 +55628,7 @@ module.exports={
   "license": "MIT"
 }
 
-},{}],"vipstarcoin-lib":[function(require,module,exports){
+},{}],"miningenthusiastcoin-lib":[function(require,module,exports){
 (function (global,Buffer){
 'use strict';
 
@@ -55638,14 +55638,14 @@ var bitcore = module.exports;
 bitcore.version = 'v' + require('./package.json').version;
 bitcore.versionGuard = function(version) {
   if (version !== undefined) {
-    var message = 'More than one instance of vipstarcoin-lib found. ' +
-      'Please make sure to require vipstarcoin-lib and check that submodules do' +
-      ' not also include their own vipstarcoin-lib dependency.';
+    var message = 'More than one instance of miningenthusiastcoin-lib found. ' +
+      'Please make sure to require miningenthusiastcoin-lib and check that submodules do' +
+      ' not also include their own miningenthusiastcoin-lib dependency.';
     console.log(message);
   }
 };
-bitcore.versionGuard(global._vipstarcoincore);
-global._vipstarcoincore = bitcore.version;
+bitcore.versionGuard(global._miningenthusiastcoincore);
+global._miningenthusiastcoincore = bitcore.version;
 
 // crypto
 bitcore.crypto = {};

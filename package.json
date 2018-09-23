@@ -1,7 +1,7 @@
 {
-  "name": "vipstarcoin-lib",
+  "name": "miningenthusiastcoin-lib",
   "version": "0.0.4",
-  "description": "A pure and powerful JavaScript VIPSTARCOIN library.",
+  "description": "A pure and powerful JavaScript MiningEnthusiastCoin library.",
   "author": "Koutarou Tanaka <from.kyushu.island@gmail.com>",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "contributors": [],
   "keywords": [
-    "vipstarcoin",
+    "miningenthusiastcoin",
     "qtum",
     "bitcoin",
     "transaction",
@@ -31,7 +31,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/fkfk/vipstarcoin-lib.git"
+    "url": "https://github.com/MiningEnthusiastCoin-Project/miningenthusiastcoin-lib.git"
   },
   "browser": {
     "request": "browser-request"

@@ -7,8 +7,8 @@ An instance of a [PrivateKey](privatekey.md) that also contains information requ
 Sample usage:
 
 ```javascript
-var vipstarcoincore = require('vipstarcoincore');
-var HDPrivateKey = vipstarcoincore.HDPrivateKey;
+var miningenthusiastcoincore = require('miningenthusiastcoincore');
+var HDPrivateKey = miningenthusiastcoincore.HDPrivateKey;
 
 var hdPrivateKey = new HDPrivateKey();
 var retrieved = new HDPrivateKey('xpriv...');

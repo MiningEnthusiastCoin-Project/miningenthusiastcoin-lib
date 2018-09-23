@@ -1,22 +1,22 @@
-HTMLCOIN Bitcore Library
+MiningEnthusiastCoin Bitcore Library
 =======
 
-A pure and powerful JavaScript HTMLCOIN library.
+A pure and powerful JavaScript MiningEnthusiastCoin library.
 
 
 ## Get Started
 
 ```
-npm install vipstarcoin-lib
+npm install miningenthusiastcoin-lib
 ```
 
 ```
-bower install vipstarcoin-lib
+bower install miningenthusiastcoin-lib
 ```
 
 ## Security
 
-We're using vipstarcoin-lib in production, but please use common sense when doing anything related to finances! We take no responsibility for your implementation decisions.
+We're using miningenthusiastcoin-lib in production, but please use common sense when doing anything related to finances! We take no responsibility for your implementation decisions.
 
 
 
@@ -26,19 +26,19 @@ Please send pull requests for bug fixes, code optimization, and ideas for improv
 
 ## Building the Browser Bundle
 
-To build a vipstarcoin-lib full bundle for the browser:
+To build a miningenthusiastcoin-lib full bundle for the browser:
 
 ```sh
 gulp browser
 ```
 
-This will generate files named `vipstarcoin-lib.js` and `vipstarcoin-lib.min.js`.
+This will generate files named `miningenthusiastcoin-lib.js` and `miningenthusiastcoin-lib.min.js`.
 
 ## Development & Tests
 
 ```sh
-git clone https://github.com/fkfk/vipstarcoin-lib
-cd vipstarcoin-lib
+git clone https://github.com/MiningEnthusiastCoin-Project/miningenthusiastcoin-lib
+cd miningenthusiastcoin-lib
 npm install
 ```
 

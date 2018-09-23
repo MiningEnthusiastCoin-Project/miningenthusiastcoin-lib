@@ -1,17 +1,17 @@
 {
-  "name": "vipstarcoin-lib",
-  "main": "./vipstarcoin-lib.min.js",
+  "name": "miningenthusiastcoin-lib",
+  "main": "./miningenthusiastcoin-lib.min.js",
   "version": "0.0.1",
-  "homepage": "http://github.com/fkfk/vipstarcoin-lib",
+  "homepage": "http://github.com/MiningEnthusiastCoin-Project/miningenthusiastcoin-lib",
   "authors": [
     "Koutarou Tanaka <from.kyushu.island@gmail.com>"
   ],
-  "description": "A pure, powerful core for your VIPSTARCOIN project.",
+  "description": "A pure, powerful core for your MiningEnthusiastCoin project.",
   "moduleType": [
     "globals"
   ],
   "keywords": [
-    "vipstarcoin",
+    "miningenthusiastcoin",
     "bitcoin",
     "bitcore",
     "btc",

@@ -1,8 +1,8 @@
-# HTMLCOIN Address
-Represents a HTMLCOIN address. Addresses are the most popular way to make HTMLCOIN transactions.
+# MiningEnthusiastCoin Address
+Represents a MiningEnthusiastCoin address. Addresses are the most popular way to make MiningEnthusiastCoin transactions.
 
 ## Instantiate an Address
-To be able to receive HTMLCOINs an address is needed, but in order to spend them a private key is necessary. Please take a look at the [`PrivateKey`](privatekey.md) docs for more information about exporting and saving a key.  
+To be able to receive MiningEnthusiastCoins an address is needed, but in order to spend them a private key is necessary. Please take a look at the [`PrivateKey`](privatekey.md) docs for more information about exporting and saving a key.  
 
 ```javascript
 var privateKey = new PrivateKey();
