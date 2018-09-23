@@ -4691,7 +4691,7 @@ addNetwork({
   xpubkey: 0x0488b21e,
   xprivkey: 0x0488ade4,
   networkMagic: 0x012ce7b5,
-  port: 31915,
+  port: 9635,
   dnsSeeds: [
     'dnsseed.miningenthusiastcoin.com'
   ]
